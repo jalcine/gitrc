@@ -1,3 +1,30 @@
 [user]
-  name  = Jacky Alcine
-  email = me@jalcine.me
+  name = Jacky Alciné
+  email = jalcine@shutterstock.com
+  signingkey = 2A234ABC6E767393
+
+[color]
+  diff = true
+  grep = true
+  branch = true
+
+[push]
+  default = simple
+
+[merge]
+  tool = vimdiff
+  stat = true
+  log = true
+  ff = true
+
+[log]
+  date = relative
+
+[mergetool]
+  prompt = false
+
+[url "git@github.com:jalcine/"]
+  insteadOf = me:
+
+[include]
+  path = ~/.gitconfig.local
