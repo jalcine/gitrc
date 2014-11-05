@@ -1,12 +1,14 @@
 [user]
   name = Jacky Alciné
-  email = jalcine@shutterstock.com
   signingkey = 2A234ABC6E767393
 
 [color]
+  branch = true
   diff = true
   grep = true
-  branch = true
+  pager = true
+  status = true
+  ui = always
 
 [push]
   default = simple
@@ -16,15 +18,97 @@
   stat = true
   log = true
   ff = true
-
-[log]
-  date = relative
+  conflictStyle = diff3
+  defaultToUpstream = true
+  verbosity = 3
 
 [mergetool]
   prompt = false
 
+[grep]
+  linenumber = true
+
+[format]
+  signoff = true
+
+[core]
+  whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+  editor = vim
+  pager = most
+  excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes
+
+[url "git@github.com:"]
+  insteadOf = gh:
+  insteadOf = ghub:
+  insteadOf = github:
+  insteadOf = https://github.com/
+  insteadOf = http://github.com/
+
 [url "git@github.com:jalcine/"]
   insteadOf = me:
+  insteadOf = https://github.com/jalcine/
+  insteadOf = http://github.com/jalcine/
+
+[log]
+  date = relative
+
+[url "git@github.com:jalcine/"]
+  insteadOf = me:
+
+[alias]
+  submod = submodule
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+  changelog = log --pretty=format:\" * %s\"
+  shortnocolor = log --pretty= format:\"%h %cr %cn %s\"
+  diverges = !bash -c 'diff -u <(git rev-list --first-parent "${1}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
+  d = diff
+  dc = diff --cached
+  dis = diff --word-diff=color --word-diff-regex="[^[:space:],]+"
+  last = diff HEAD^
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
+  filelog = log -u
+  mt = mergetool
+  ss = stash
+  sl = stash list
+  sa = stash apply
+  sd = stash drop
+  l = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+  ll = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+  gl = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+  gll = log --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(%cr by %an)%Creset%C(yellow bold)%d%Creset%n'
+  pull = pull --ff-only
+  pul = pull
+  puhs = push
+  pus = push
+  up = merge --ff-only
+  join = merge --no-ff
+  ci = commit
+  cm = commit -m
+  currentbranch = rev-parse --abbrev-ref HEAD
+  wdiff = diff --color-words
+  undo-commit = reset --soft HEAD^
+
+[github]
+  user = jalcine
+
+[hooks]
+  global = $HOME/.githooks
+
+[i18n]
+  commitencoding = utf-8
+
+[ghi "highlight"]
+  style = colorful
+
+[ghi]
+  edtior = vim
+
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
 
 [include]
   path = ~/.gitconfig.local
