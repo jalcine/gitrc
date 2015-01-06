@@ -11,7 +11,7 @@
   ui = always
 
 [push]
-  default = simple
+  default = tracking
 
 [merge]
   tool = vimdiff
@@ -95,6 +95,7 @@
   wdiff = diff --color-words
   undo-commit = reset --soft HEAD^
   clean-merge = merge --ff-only
+  news = log -p HEAD@{1}..HEAD@{0}
 
 [github]
   user = jalcine
