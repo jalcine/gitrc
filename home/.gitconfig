@@ -11,7 +11,7 @@
   ui = always
 
 [push]
-  default = simple
+  default = tracking
 
 [merge]
   tool = vimdiff
