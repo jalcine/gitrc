@@ -96,6 +96,7 @@
   undo-commit = reset --soft HEAD^
   clean-merge = merge --ff-only
   news = log -p HEAD@{1}..HEAD@{0}
+	restore = checkout HEAD --
 
 [github]
   user = jalcine
