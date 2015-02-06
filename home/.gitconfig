@@ -118,3 +118,5 @@
 
 [include]
   path = ~/.gitconfig.local
+[hub]
+	protocol = git
