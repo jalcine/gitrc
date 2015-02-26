@@ -1,6 +1,5 @@
 [user]
   name = Jacky Alciné
-  signingkey = 2A234ABC6E767393
 
 [color]
   branch = true
@@ -49,16 +48,16 @@
   insteadOf = https://github.com/
   insteadOf = http://github.com/
 
-[url "git@github.com:jalcine/"]
+[url "git@git.jacky.wtf"]
   insteadOf = me:
-  insteadOf = https://github.com/jalcine/
-  insteadOf = http://github.com/jalcine/
+  insteadOf = http://git.jacky.wtf/
+  insteadOf = https://jacky.wtf/a/git/
 
 [log]
   date = relative
 
 [url "git@github.com:jalcine/"]
-  insteadOf = me:
+  insteadOf = ghme:
 
 [alias]
   submod = submodule
@@ -96,13 +95,10 @@
   undo-commit = reset --soft HEAD^
   clean-merge = merge --ff-only
   news = log -p HEAD@{1}..HEAD@{0}
-	restore = checkout HEAD --
+  restore = checkout HEAD --
 
 [github]
   user = jalcine
-
-[hooks]
-  global = $HOME/.githooks
 
 [i18n]
   commitencoding = utf-8
@@ -119,5 +115,6 @@
 
 [include]
   path = ~/.gitconfig.local
+
 [hub]
-	protocol = git
+  protocol = git
