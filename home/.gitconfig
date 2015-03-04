@@ -48,7 +48,7 @@
   insteadOf = https://github.com/
   insteadOf = http://github.com/
 
-[url "git@git.jacky.wtf"]
+[url "git@git.jacky.wtf:"]
   insteadOf = me:
   insteadOf = http://git.jacky.wtf/
   insteadOf = https://jacky.wtf/a/git/
