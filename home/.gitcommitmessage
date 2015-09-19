@@ -1,0 +1,10 @@
+
+# ⬆️ 50-character subject
+# ⬇️ 72-character wrapped body
+
+# Places for pointers on a good commit message are:
+#  * https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
+#  * http://chris.beams.io/posts/git-commit/
+#  * http://365git.tumblr.com/post/3308646748/writing-git-commit-messages
+
+# vim: set ft=gitcommit

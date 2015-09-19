@@ -118,3 +118,6 @@
 
 [hub]
   protocol = git
+
+[column]
+    ui = always
