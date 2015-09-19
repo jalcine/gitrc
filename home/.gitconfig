@@ -121,3 +121,5 @@
 
 [column]
     ui = always
+[commit]
+	template = /home/jalcine/.gitcommitmessage
