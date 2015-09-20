@@ -118,3 +118,10 @@
 
 [hub]
   protocol = git
+
+[column]
+    ui = always
+[commit]
+	template = /home/jalcine/.gitcommitmessage
+[gc]
+	auto = 1
