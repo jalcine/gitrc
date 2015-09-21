@@ -90,6 +90,10 @@
   join = merge --no-ff
   ci = commit
   cm = commit -m
+  re = remote
+  rb = rebase
+  rbm = rebase master
+  rbd = rebase develop
   currentbranch = rev-parse --abbrev-ref HEAD
   wdiff = diff --color-words
   undo-commit = reset --soft HEAD^
