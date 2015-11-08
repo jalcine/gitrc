@@ -1,5 +1,6 @@
 [user]
   name = Jacky Alciné
+  signingKey = yo@jacky.wtf
 
 [color]
   branch = true
@@ -124,8 +125,10 @@
   protocol = git
 
 [column]
-    ui = always
+  ui = always
+
 [commit]
-	template = /home/jalcine/.gitcommitmessage
+  template = /home/jalcine/.gitcommitmessage
+
 [gc]
-	auto = 1
+  auto = 1
