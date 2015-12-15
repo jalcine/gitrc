@@ -13,7 +13,7 @@
   default = tracking
 
 [merge]
-  tool = vimdiff
+  tool = nvim
   stat = true
   log = true
   ff = true
@@ -24,6 +24,9 @@
 [mergetool]
   prompt = false
 
+[mergetool.nvim]
+  cmd = nvim -d -o $BASE $REMOTE $LOCAL $MERGED
+
 [grep]
   linenumber = true
 
@@ -32,7 +35,7 @@
 
 [core]
   whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
-  editor = vim
+  editor = nvim
   pager = most
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
@@ -107,7 +110,7 @@
   style = colorful
 
 [ghi]
-  edtior = vim
+  edtior = nvim
 
 [filter "media"]
   clean = git-media-clean %f
@@ -122,6 +125,10 @@
 [column]
     ui = always
 [commit]
-	template = /home/jalcine/.gitcommitmessage
+	template = ~/.gitcommitmessage
 [gc]
 	auto = 1
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
