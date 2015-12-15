@@ -1,5 +1,6 @@
 [user]
   name = Jacky Alciné
+  signingKey = yo@jacky.wtf
 
 [color]
   branch = true
@@ -93,6 +94,10 @@
   join = merge --no-ff
   ci = commit
   cm = commit -m
+  re = remote
+  rb = rebase
+  rbm = rebase master
+  rbd = rebase develop
   currentbranch = rev-parse --abbrev-ref HEAD
   wdiff = diff --color-words
   undo-commit = reset --soft HEAD^
@@ -123,11 +128,13 @@
   protocol = git
 
 [column]
-    ui = always
+  ui = always
+
 [commit]
 	template = ~/.gitcommitmessage
 [gc]
-	auto = 1
+  auto = 1
+
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
