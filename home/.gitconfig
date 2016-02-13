@@ -104,6 +104,7 @@
   clean-merge = merge --ff-only
   news = log -p HEAD@{1}..HEAD@{0}
   restore = checkout HEAD --
+  dif = diff
 
 [github]
   user = jalcine
