@@ -89,6 +89,7 @@
   pff = pull --ff-only
   pmo = pull --no-ff
   puhs = push
+  pu = !git push origin $(git currentbranch)
   pus = push
   up = merge --ff-only
   join = merge --no-ff
