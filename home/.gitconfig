@@ -1,6 +1,5 @@
 [user]
   name = Jacky Alciné
-  signingKey = yo@jacky.wtf
 
 [color]
   branch = true
@@ -64,6 +63,7 @@
   insteadOf = ghme:
 
 [alias]
+  ap = add --patch
   submod = submodule
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
@@ -133,7 +133,9 @@
   ui = always
 
 [commit]
-	template = ~/.gitcommitmessage
+  template = ~/.gitcommitmessage
+  gpgsign = true
+
 [gc]
   auto = 1
 
