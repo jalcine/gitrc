@@ -76,6 +76,7 @@
   last = diff HEAD^
   unstage = reset HEAD
   uncommit = reset --soft HEAD^
+  undo-commit = !git uncommit
   filelog = log -u
   mt = mergetool
   ss = stash
@@ -101,7 +102,6 @@
   rbd = rebase develop
   currentbranch = rev-parse --abbrev-ref HEAD
   wdiff = diff --color-words
-  undo-commit = reset --soft HEAD^
   clean-merge = merge --ff-only
   news = log -p HEAD@{1}..HEAD@{0}
   restore = checkout HEAD --
@@ -140,6 +140,6 @@
   auto = 1
 
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
