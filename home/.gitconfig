@@ -51,6 +51,14 @@
   insteadOf = https://github.com/
   insteadOf = http://github.com/
 
+[url "git@gitlab.com:"]
+  insteadOf = gl:
+  insteadOf = glab:
+  insteadOf = gitlab:
+  insteadOf = https://gitlab.com/
+  insteadOf = http://gitlab.com/
+
+
 [url "git@git.jacky.wtf:"]
   insteadOf = me:
   insteadOf = http://git.jacky.wtf/
