@@ -25,7 +25,7 @@
   prompt = false
 
 [mergetool.nvim]
-  cmd = nvim -d -o $MERGED
+  cmd = nvim -d -o $LOCAL $REMOTE $MERGED
 
 [grep]
   linenumber = true
