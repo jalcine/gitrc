@@ -142,7 +142,8 @@
 
 [commit]
   template = ~/.gitcommitmessage
-  gpgsign = true
+  gpgsign = false
+  verbose = vv
 
 [gc]
   auto = 1
