@@ -1,0 +1,4 @@
+*.bak
+*.dat
+tags
+.mypy-cache/*
