@@ -2,3 +2,6 @@
 *.dat
 tags
 .mypy-cache/*
+*cache*/*
+tmp/*
+build/*
