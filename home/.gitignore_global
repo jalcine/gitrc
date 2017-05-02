@@ -1,1 +1,8 @@
 tags
+*.bak
+*.dat
+tags
+.mypy-cache/*
+*cache*/*
+tmp/*
+build/*
