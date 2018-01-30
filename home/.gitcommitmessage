@@ -1,17 +1,11 @@
 
 # <type>(<scope>): <subject>
 # ⬆️ 50-character subject
+# * Do not end the subject line with a period
+# * Use the imperative mood in the subject line
 
 # ⬇️ 72-character wrapped body
 # The whole change made.
+# * Wrap the body at 72 characters
+# * Use the body to explain what and why vs. how
 # <body>
-
-# ⬇️ 72-character wrapped footer
-# Anything that could result in a seriously important breaking change.
-# <footer>
-
-# Places for pointers on a good commit message are:
-#  * https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
-#  * http://chris.beams.io/posts/git-commit/
-#  * http://365git.tumblr.com/post/3308646748/writing-git-commit-messages
-#  * http://dev.solita.fi/2013/07/04/whats-in-a-good-commit.html
